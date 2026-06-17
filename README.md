@@ -31,8 +31,8 @@
 Goals are structured around **protein sequences** as the learning substrate.
 
 ### PLM / LLM Pretraining
-- [ ] Implement a transformer from scratch (attention, positional encoding, layer norm) and pretrain on a small protein sequence corpus
-- [ ] Reproduce masked language modelling (BERT-style) on UniRef50 sequences at small scale; verify perplexity decreases sensibly
+- [x] Implement a transformer from scratch (attention, positional encoding, layer norm) and pretrain on a small protein sequence corpus
+- [x] Reproduce masked language modelling (BERT-style) on AIRR dataset sequences at small scale; verify perplexity decreases sensibly
 - [ ] Understand ESM-2 architecture choices: why tied embeddings, why no absolute positional encoding, what the contact head does
 - [ ] Train a PLM on multiple GPUs: implement data parallelism (DDP), understand gradient synchronisation, mixed precision (bf16/fp16), and gradient checkpointing to fit larger models in memory
 - [ ] Implement next-token autoregressive pretraining on protein sequences (GPT-style) and compare representations to masked LM
