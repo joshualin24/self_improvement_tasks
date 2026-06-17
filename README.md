@@ -44,8 +44,4 @@ Goals are structured around **protein sequences** as the learning substrate.
 - [ ] Implement DPO or preference learning on pairs of protein sequences ranked by experimental affinity
 
 ### RL Fine-Tuning
-- [ ] Frame CDR-H3 optimisation as an RL problem: state = current sequence, action = point mutation, reward = PLM log-likelihood or oracle score
-- [ ] Implement REINFORCE on a toy protein design task; observe reward hacking and mode collapse firsthand
-- [ ] Study PPO and implement it against a differentiable affinity oracle; compare sample efficiency to genetic algorithms
-- [ ] Implement RLHF-style pipeline for protein sequences: pretrain PLM → SFT on good binders → train reward model → PPO against it
-- [ ] Explore constrained RL: add penalties for edit distance from the lead, developability flags, or sequence diversity to prevent exploitation
+- [ ] AlphaGo-style fine-tuning for B cell somatic hypermutation: train a policy network that proposes point mutations and a value network that estimates downstream affinity gain, then use MCTS over the CDR sequence space guided by both networks
