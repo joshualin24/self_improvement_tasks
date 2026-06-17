@@ -40,7 +40,6 @@ Goals are structured around **protein sequences** as the learning substrate.
 ### Post-Training
 - [ ] Fine-tune a frozen PLM head on a labelled property (thermostability, binding affinity, solubility) using LoRA
 - [ ] Implement supervised fine-tuning (SFT) on a curated set of high-affinity antibody sequences; measure held-out rank correlation
-- [ ] Study instruction tuning for proteins: what does a "prompt" look like when the input is a sequence? (e.g. prefix conditioning, control tags)
 - [ ] Compare full fine-tuning vs. LoRA vs. adapter vs. frozen-backbone + MLP head on a fixed dataset; understand the data-regime tradeoffs
 - [ ] Implement DPO or preference learning on pairs of protein sequences ranked by experimental affinity
 
